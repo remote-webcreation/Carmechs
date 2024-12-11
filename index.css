@@ -5,11 +5,18 @@
     --blackbackround: #18181a;
     --black:#101010;
     --white: #ece5e5
+    --smoke: #efe8e8;
 }
 
 body {
     font-family: Arial, sans-serif;
     font-size: 1rem;
+    h2 {
+        color: var(--black);
+    }
+    h3 {
+        color: rgba(205, 134, 63, 0.657);
+    }
 }
 
 header {
@@ -29,12 +36,12 @@ header {
         align-items: center;
         gap: 3rem;
         a {
-            color: steelblue;
-            text-decoration: none;
-            &:hover {
-                text-decoration: underline;
-                text-decoration-color: steelblue;
-                color: var(--white);
+        color: whitesmoke;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: steelblue;
+            color: var(--white);
             }
         }
     }
@@ -47,10 +54,9 @@ header {
             color: steelblue;
             text-decoration: none;
             &:hover {
-                text-decoration: underline;
-                text-decoration-color: steelblue;
                 color: var(--white);
             }
+            
         }
     }
 }
@@ -85,16 +91,16 @@ main {
         align-items: center;
         gap: 3rem;
         height: auto;
-        padding: 3rem;
+        padding: 4rem 3rem;
         .servicecards {
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 1.5rem;
-            gap: 1.5rem;
+            gap: 3rem;
             .card {
                 background-color: steelblue;
-                background-color: #f2f2f2;
+                background-color: peru;
                 border-radius: .625rem;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
                 padding: 1.25rem;
@@ -103,12 +109,24 @@ main {
                 display: grid;
                 gap: 1.5rem;
                 grid-template-rows: auto 1fr;
-                h2 {
+                &:hover {
+                    cursor: pointer;
+                    background-color: cornflowerblue;
+                    p {
+                        color: whitesmoke;
+                    }
+                }
+                h3 {
                     margin-bottom: .625rem;
+                    color: var(--white);
                 }
                 img {
                     width: 100%;
                     border-radius: .625rem;
+                }
+                p {
+                    font-weight: bold;
+                    color: var(--white);
                 }
             }
         }
@@ -118,20 +136,94 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 3rem;
-        height: 60vh;
-        border: 1px solid red;
+        padding: 4rem 3rem;
+        height: auto;
+        background-color: rgb(66, 98, 158);
         gap: 3rem;
+        h2 {
+            align-self: center;
+        }
         .partners {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-end;
             gap: 4rem;
             div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1.5rem;
+                padding: 0rem 3rem;
                 img {
-                    width: 9.375rem;
+                    width: 100%;
+                    border-radius: .3125rem;
+                }
+                h4 {
+                    color: rgb(227, 222, 222);
+                }
+                p {
+                    color: var(--black);
+                }
+                a {
+                    color: rgb(190, 200, 200);
+                    text-decoration: none;
+                    align-self: start;
+                    font-weight: lighter;
+                    &:hover {
+                        color: whitesmoke;
+                    }
                 }
             }
+        }
+    }
+    .emailsection {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 3rem;
+        gap: 5rem;
+        .mailtext {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            text-align: center;
+            gap: 1.5rem;
+            h2 {
+                line-height: 2rem;
+            }
+        }
+        .emailform {
+            max-width: 500px;
+            padding: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        
+        button {
+            background-color: #6495ed;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: peru;
         }
     }
 }
