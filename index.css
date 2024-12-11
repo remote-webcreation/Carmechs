@@ -2,9 +2,167 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --blackbackround: #18181a;
+    --black:#101010;
+    --white: #ece5e5
 }
 
 body {
     font-family: Arial, sans-serif;
     font-size: 1rem;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color:#18181a ;
+    padding: 0rem 3rem;
+    .brandsection {
+        color: var(--white);
+        text-decoration: none;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        a {
+            color: steelblue;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+                text-decoration-color: steelblue;
+                color: var(--white);
+            }
+        }
+    }
+    .anmeldung {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        a {
+            color: steelblue;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+                text-decoration-color: steelblue;
+                color: var(--white);
+            }
+        }
+    }
+}
+
+.herosection {
+    height: 80vh;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FZK4qPgFceOs%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=456bd6046611e341f64b7d1a761cf56a61ba2e4ecdf46b04ecbbb86d0f91d0d6&ipo=images);
+    background-position: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    button {
+        background-color: peru;
+        border: none;
+        padding: .9375rem .9375rem;
+        border-radius: 10rem;
+        font-weight: bold;
+        color: var(--white);
+        font-size: 1.125rem;
+        cursor: pointer;
+        &:hover {
+            background-color: rgb(63, 177, 212);
+        }
+    }
+}
+
+main {
+    .card-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        height: auto;
+        padding: 3rem;
+        .servicecards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1.5rem;
+            gap: 1.5rem;
+            .card {
+                background-color: steelblue;
+                background-color: #f2f2f2;
+                border-radius: .625rem;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 1.25rem;
+                text-align: center;
+                width: 18.75rem; 
+                display: grid;
+                gap: 1.5rem;
+                grid-template-rows: auto 1fr;
+                h2 {
+                    margin-bottom: .625rem;
+                }
+                img {
+                    width: 100%;
+                    border-radius: .625rem;
+                }
+            }
+        }
+    }
+    .logosection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+        height: 60vh;
+        border: 1px solid red;
+        gap: 3rem;
+        .partners {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+            div {
+                img {
+                    width: 9.375rem;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackbackround);
+    color: var(--white);
+    padding: .3125rem 3rem;
+    gap: 3rem;
+    ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        a {
+            color: var(--white);
+            text-decoration: none;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+    small {
+        color: rgb(96, 94, 94);
+    }
+}
+
