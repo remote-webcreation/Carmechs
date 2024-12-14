@@ -5,7 +5,7 @@
     --blackbackround: #18181a;
     --black:#101010;
     --white: #ece5e5
-    --smoke: #efe8e8;
+
     --blue: #6495ed;
     --orange: #cd863fa8;
 }
@@ -300,17 +300,17 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 3rem;
-        /* link color not working */
-        a { 
-            color: var(--white);
-            text-decoration: none;
-            &:hover {
-                color: white;
-            }
-        }
     }
     small {
         color: rgb(96, 94, 94);
+    }
+}
+
+footer a { 
+    color: rgb(234, 228, 228);
+    text-decoration: none;
+    &:hover {
+        color: rgb(243, 228, 217);
     }
 }
 
