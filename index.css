@@ -4,10 +4,9 @@
     box-sizing: border-box;
     --blackbackround: #18181a;
     --black:#101010;
-    --white: #ece5e5
-
+    --white: #f6f1f1;
     --blue: #6495ed;
-    --orange: #cd863fa8;
+    --orange: #cca16f;
 }
 
 body {
@@ -168,7 +167,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 4rem 3rem;
+        padding: 4rem 6rem;
         height: auto;
         background-color: rgb(66, 98, 158);
         gap: 3rem;
@@ -185,7 +184,6 @@ main {
                 flex-direction: column;
                 align-items: center;
                 gap: 1.5rem;
-                padding: 0rem 3rem;
                 img {
                     width: 100%;
                     border-radius: .3125rem;
@@ -211,51 +209,85 @@ main {
     .emailsection {
         height: auto;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        padding: 4rem 3rem;
-        gap: 5rem;
+        padding: 4rem 6rem;
         .mailtext {
+            width: calc(100% / 2);
             display: flex;
             flex-direction: column;
             justify-content: start;
             align-items: center;
             text-align: center;
-            gap: 1.5rem;
-            h3 {
+            gap: 3rem;
+            h4 {
                 line-height: 3rem;
             }
+            .mailicon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1.5rem;
+                width: calc(50% - 0.5rem);
+                h5 a {
+                    text-decoration: none;
+                    color: #6495ed;
+                    &:hover {
+                        color: var(--orange);
+                    }
+                }
+            }
+            
         }
         .emailform {
-            max-width: 31.25rem;
-            padding: 1.25rem;
+            width: calc(50% - 0.5rem);
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            background-color: var(--blue);
+            padding: 3rem;
+            margin: 0rem 3rem;
+            border-radius: 1rem;
+            h4 {
+                color: var(--white);
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: .625rem;
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            input, textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid rgb(150, 159, 162);
+                border-radius: 4px;
+            }
+            input::placeholder, textarea::placeholder {
+                color: rgb(175, 173, 173);
+            }
         }
         
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
         
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
+        
+        
 
         
-        button {
-            background-color: var(--blue);
+        .submitbutton {
+            background-color: var(--orange);
             color: white;
+            font-weight: bold;
             padding: .9375rem 1.25rem;
             border: none;
-            border-radius: 4px;
+            border-radius: 2rem;
             cursor: pointer;
-        }
-        
-        button:hover {
-            background-color: var(--orange);
+            &:hover {
+                background-color: rgb(222, 155, 88);
+            }
         }
     }
     .gebrauchtwagen {
@@ -282,7 +314,10 @@ main {
         }
     }
 }
+.testing {
+    background-color: rgb(198, 198, 198);
 
+}
 footer {
     height: 20vh;
     width: 100%;
