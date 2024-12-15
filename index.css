@@ -340,12 +340,9 @@ main {
         gap: 3rem;
         padding: 4rem 3rem;
         background-color: var(--backroundblue);
-        h4 {
-            color: var(--blue);
-        }
         p {
             font-weight: bold;
-            color: var(--orange);
+            color: var(--blue);
             font-size: 1.5rem;
         }
         form {
@@ -381,64 +378,64 @@ main {
             }
         }
     }
-    
-}
-
-.neuwagen {
-    /* not working */
-    display: flex; 
-    flex-direction: column;
-    justify-content: center; /* not working */
-    align-items: center;
-    text-align: center; /* not working */
-    margin: 0;
-    padding: 4rem 6rem ; /* not working */
-    width: 100%;
-    height: auto;
-    h5 {
-        color: var(--blue); /* not working */
+    .neuwagen {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center; /* not working */
+        align-items: center;
+        text-align: center; /* not working */
+        margin: 0;
+        padding: 4rem 6rem ; /* not working */
+        width: 100%;
+        height: auto;
+        gap: 3rem;
+        h5 {
+            color: var(--blue); /* not working */
+        }
+        h2 {
+            align-self: center; /* not working */
+        }
     }
-    h2 {
-        align-self: center; /* not working */
-    }
-}
-
-.nw {
-    width: 40%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; 
-    flex-direction: column;
-    gap: 2rem;
-    background-color: var(--orange);
-    padding: 3rem;
-    border-radius: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 3rem;
-    p {
-        color: var(--white);
-        font-weight: bold;
-        font-size: 1.3125rem;
-    }
-    hr {
-        width: 80%;
-        color: #c2bebe;
-    }
-    .submitbutton2 {
-            color: white;
+    .nw {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; 
+        flex-direction: column;
+        gap: 2rem;
+        background-color: var(--orange);
+        padding: 3rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        p {
+            color: var(--white);
             font-weight: bold;
-            padding: .9375rem 1.25rem;
-            border: none;
-            border-radius: 2rem;
-            cursor: pointer;
-            background-color: var(--blue);
-            align-self: center;
-            &:hover {
-                background-color: #6392ea;
-                color: #f0f5f7;
-            }
+            font-size: 1.3125rem;
+        }
+        hr {
+            width: 80%;
+            color: #c2bebe;
+        }
+        .submitbutton2 {
+                color: white;
+                font-weight: bold;
+                padding: .9375rem 1.25rem;
+                border: none;
+                border-radius: 2rem;
+                cursor: pointer;
+                background-color: var(--blue);
+                align-self: center;
+                &:hover {
+                    background-color: #6392ea;
+                    color: #f0f5f7;
+                }
+        }
     }
 }
+
+
+
+
 footer {
     height: 20vh;
     width: 100%;
