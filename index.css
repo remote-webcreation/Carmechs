@@ -118,7 +118,7 @@ header {
             color: var(--white);
         }
         button {
-            background-color: var(--blue);
+            background-color: #5c8adfd9;
             border: none;
             padding: .9375rem 1.5rem;
             border-radius: 10rem;
@@ -295,6 +295,7 @@ main {
             h4 {
                 color: var(--white);
                 justify-self: center;
+                line-height: 3rem;
             }
             form {
                 display: flex;
@@ -342,6 +343,11 @@ main {
         h4 {
             color: var(--blue);
         }
+        p {
+            font-weight: bold;
+            color: var(--orange);
+            font-size: 1.5rem;
+        }
         form {
             flex-wrap: wrap;
             display: flex;
@@ -375,10 +381,55 @@ main {
             }
         }
     }
-    .neuwagen form {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    
+}
+.neuwagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 4rem 6rem ;
+    width: 100%;
+    height: auto;
+    h5 {
+        color: var(--blue);
+    }
+}
+
+.nw {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--orange);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    p {
+        color: var(--white);
+        font-weight: bold;
+        font-size: 1.3125rem;
+    }
+    hr {
+        width: 80%;
+        color: #c2bebe;
+    }
+    .submitbutton2 {
+            color: white;
+            font-weight: bold;
+            padding: .9375rem 1.25rem;
+            border: none;
+            border-radius: 2rem;
+            cursor: pointer;
+            background-color: var(--blue);
+            &:hover {
+                background-color: #6392ea;
+                color: #f0f5f7;
+            }
     }
 }
 footer {
