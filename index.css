@@ -383,26 +383,31 @@ main {
     }
     
 }
+
 .neuwagen {
-    display: flex;
+    /* not working */
+    display: flex; 
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; /* not working */
     align-items: center;
-    text-align: center;
+    text-align: center; /* not working */
     margin: 0;
-    padding: 4rem 6rem ;
+    padding: 4rem 6rem ; /* not working */
     width: 100%;
     height: auto;
     h5 {
-        color: var(--blue);
+        color: var(--blue); /* not working */
+    }
+    h2 {
+        align-self: center; /* not working */
     }
 }
 
 .nw {
     width: 60%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* not working */
+    align-items: center; 
     flex-direction: column;
     gap: 2rem;
     background-color: var(--orange);
