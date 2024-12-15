@@ -159,45 +159,54 @@
 
         <div class="Neuwagen">
             <h2>Bestelle jetzt deinen Neuwagen</h2>
-            <h5>Bitte fülle die entsprechenden Felder aus</h5>
+            <h5>Stelle eine unverbindliche Anfrage</h5>
             <form class="nw">
-                <p>Stelle eine unverbindliche Anfrage</p>
-                <div class="mb-3">
+
+                <p>Bitte fülle die entsprechenden Felder aus</p>
+
+                <div class="input-container">
                     <label for="firstname" class="form-label">Vorname:</label>
-                    <input type="text" class="form-control" id="firstname" required>
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    id="firstname"
+                    aria-label="Enter your firstname"
+                    required>
                 </div>
-                <div class="mb-3">
+                <div class="input-container">
                     <label for="lastname" class="form-label">Nachname:</label>
-                    <input type="text" class="form-control" id="lastname" required>
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    id="lastname" 
+                    aria-label="Enter your lastname"
+                    required>
                 </div>
-                <div class="mb-3">
-                    <label for="street" class="form-label">Straße:</label>
-                    <input type="text" class="form-control" id="street" required>
-                </div>
-                <div class="mb-3">
-                    <label for="housenumber" class="form-label">Nr.:</label>
-                    <input type="text" class="form-control" id="housenumber" required>
-                </div>
-                <div class="mb-3">
-                    <label for="city" class="form-label">Ort:</label>
-                    <input type="text" class="form-control" id="city" required>
-                </div>
-                <div class="mb-3">
-                    <label for="zipcode" class="form-label">PLZ:</label>
-                    <input type="text" class="form-control" id="zipcode" required>
-                </div>
-                <div class="mb-3">
+                <div class="input-container">
                     <label for="phone" class="form-label">Telefonnummer:</label>
-                    <input type="tel" class="form-control" id="phone" required>
+                    <input 
+                    type="tel" 
+                    class="form-control" 
+                    id="phone" 
+                    aria-label= "enter your phone number"
+                    required>
                 </div>
-                <div class="mb-3">
+                <div class="input-container">
                     <label for="email" class="form-label">E-Mail Adresse:</label>
-                    <input type="email" class="form-control" id="email" required>
+                    <input 
+                    type="email" 
+                    class="form-control" 
+                    id="email" 
+                    aria-label= "enter your email"
+                    required>
                 </div>
 
-                <div class="mb-3">
+                <div class="brand-container">
                     <label for="marke" class="form-label">Marke:</label>
-                    <select class="form-select" id="marke">
+                    <select 
+                    class="form-select" 
+                    aria-label="select one brand"
+                    id="marke">
                         <option value="bmw">BMW</option>
                         <option value="mercedes">Mercedes</option>
                         <option value="audi">Audi</option>
@@ -205,7 +214,7 @@
                         <option value="toyota">Toyota</option>
                         </select>
                 </div>
-                <div class="mb-3">
+                <div class="label-select">
                     <label for="tueren" class="form-label">Türen:</label>
                     <select class="form-select" id="tueren">
                         <option value="2">2</option>
@@ -229,16 +238,25 @@
                 <hr>
                 <div class="mb-3">
                     <label for="Anmerkungen" class="form-label">Anmerkungen:</label>
-                    <textarea class="form-control" id="Anmerkungen" rows="3" disabled></textarea>
+                    <textarea 
+                    class="form-control" 
+                    id="Anmerkungen" 
+                    rows="3" 
+                    disabled></textarea>
                 </div>
 
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="agb" required>
+                    <input 
+                    class="form-check-input" 
+                    type="checkbox" 
+                    value="" 
+                    id="agb" 
+                    required>
                     <label class="form-check-label" for="agb">
                         Ich akzeptiere die <a href="#">AGB</a>
                     </label>
                 </div>
-                <button class="submitbutton2" type="submit" class="btn btn-primary">Bestellung absenden</button>
+                <button class="submitbutton2" type="submit">Bestellung absenden</button>
                 
             </form>
         </div>

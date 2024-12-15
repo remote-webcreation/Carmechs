@@ -404,9 +404,9 @@ main {
 }
 
 .nw {
-    width: 60%;
+    width: 40%;
     display: flex;
-    justify-content: center; /* not working */
+    justify-content: flex-start;
     align-items: center; 
     flex-direction: column;
     gap: 2rem;
@@ -414,6 +414,7 @@ main {
     padding: 3rem;
     border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 3rem;
     p {
         color: var(--white);
         font-weight: bold;
@@ -431,6 +432,7 @@ main {
             border-radius: 2rem;
             cursor: pointer;
             background-color: var(--blue);
+            align-self: center;
             &:hover {
                 background-color: #6392ea;
                 color: #f0f5f7;
