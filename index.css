@@ -198,9 +198,9 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 3rem;
+        gap: 6rem;
         height: auto;
-        padding: 4rem 6rem;
+        padding: 6rem 6rem;
         width: 100%;
         background-color: var(--backroundwhite);
         .servicecards {
@@ -253,10 +253,10 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 4rem 6rem;
+        padding: 6rem 6rem;
         height: auto;
         background-color: #5879b6;
-        gap: 3rem;
+        gap: 6rem;
         h2 {
             align-self: center;
             color: var(--white);
@@ -304,18 +304,17 @@ main {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        padding: 4rem 4rem;
+        padding: 6rem 6rem;
         background-color: var(--backroundwhite);
         .mailtext {
-            width: calc(100% / 2);
             display: flex;
             flex-direction: column;
             justify-content: start;
             align-items: center;
             text-align: center;
             gap: 3rem;
-            h4 {
-                line-height: 3rem;
+            h3 {
+                line-height: 4rem;
             }
             p {
                 font-size: 1.125rem;
@@ -332,7 +331,7 @@ main {
                     text-decoration: none;
                     color: #6495ed;
                     &:hover {
-                        color: var(--orange);
+                        color: var(--black);
                     }
                 }
             }
@@ -345,7 +344,6 @@ main {
             gap: 3rem;
             background-color: var(--darkblue);
             padding: 3rem;
-            margin: 3rem;
             border-radius: 1rem;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             h4 {
@@ -394,12 +392,13 @@ main {
         justify-content: center;
         align-items: center;
         gap: 3rem;
-        padding: 4rem 3rem;
+        padding: 6rem 3rem;
         background-color: var(--backroundblue);
         p {
             font-weight: bold;
             color: var(--blue);
-            font-size: 1.5rem;
+            font-size: 1.25rem;
+            margin-top: 3rem;
         }
         form {
             flex-wrap: wrap;
@@ -437,19 +436,20 @@ main {
     .neuwagen {
         display: flex; 
         flex-direction: column;
-        justify-content: center; /* not working */
+        justify-content: center; 
         align-items: center;
-        text-align: center; /* not working */
+        text-align: center; 
         margin: 0;
-        padding: 4rem 6rem ; /* not working */
+        padding: 6rem 4rem ; 
         width: 100%;
         height: auto;
-        gap: 3rem;
+        gap: 6rem;
+        margin-bottom: 3rem;
         h5 {
-            color: var(--blue); /* not working */
+            color: var(--blue);
         }
         h2 {
-            align-self: center; /* not working */
+            align-self: center;
         }
     }
     .nw {
