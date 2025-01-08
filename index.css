@@ -46,39 +46,50 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
     background-color:#18181a ;
-    padding: 0rem 3rem;
+    padding: 2rem 3rem;
     .logo {
     color: var(--darkblue);
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 0.5rem;
+    padding-right: 2rem;
+    flex-wrap: wrap;
     }
     
-    nav {
-        display: flex;
+    .headernav {
         justify-content: center;
         align-items: center;
-        gap: 3rem;
         justify-self: center;
-        a {
-        color: whitesmoke;
-        text-decoration: none;
-            &:hover {
-            text-decoration: underline;
-            text-decoration-color: var(--blue);
-            color: var(--white);
-            text-underline-offset: 4px;
-            text-decoration-thickness: 2px;
-            }
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1.5rem;
+            li {
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    color: whitesmoke;
+                    &:hover {
+                        text-decoration: underline;
+                        text-decoration-color: var(--blue);
+                        color: var(--white);
+                        text-underline-offset: 4px;
+                        text-decoration-thickness: 2px;
+                        }
+                }
+                }
         }
     }
     .anmeldung {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 3rem;
+        padding-left: 2rem;
         .signin {
             color: var(--orange);
             text-decoration: none;
