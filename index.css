@@ -448,18 +448,19 @@ main {
 
 
 footer {
-    height: 20vh;
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     background-color: var(--blackbackround);
     color: var(--white);
     padding: .3125rem 3rem;
     flex-wrap: wrap;
+    gap: 3rem;
     ul {
         display: flex;
+        flex-wrap: wrap;
         list-style-type: none;
         justify-content: center;
         align-items: center;
@@ -472,7 +473,9 @@ footer {
         font-weight: bold;
         letter-spacing: 0.5rem;
         padding-right: 2rem;
-        flex-wrap: wrap;
+        &:hover {
+            color: var(--darkblue);
+        }
     }
     .cr {
         color: rgb(96, 94, 94);
