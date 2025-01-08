@@ -524,9 +524,6 @@ main {
                 justify-content: space-between;
                 width: 100%;
                 border: 1px solid red;
-                .form-check-input1, .form-check-input2 {
-
-                }
             }
         }
         
