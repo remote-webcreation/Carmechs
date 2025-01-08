@@ -64,13 +64,14 @@ body {
 header {
     position: sticky; 
     top: 0;
-    transition: top 0.3s;
+    transition: top 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#000000d9 ;
+    background-color:#000000e2 ;
     padding: 2rem 2rem;
     .logo {
     color: var(--darkblue);
