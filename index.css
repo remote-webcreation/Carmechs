@@ -154,16 +154,20 @@ header {
             color: var(--white);
         }
         button {
-            background-color: #5c8adfd9;
+            background-color: #da9e59b6;
             border: none;
-            padding: .9375rem 1.5rem;
+            padding: .625rem 1.5rem;
             border-radius: 10rem;
             font-weight: bold;
             color: var(--white);
             font-size: 1.125rem;
             cursor: pointer;
+            transition: backround-color 0.3s ease;
             &:hover {
                 background-color: #da9e59c8;
+            }
+            &:active {
+                background-color: var(--darkblue);
             }
         }
     }
@@ -468,9 +472,6 @@ main {
         }
     }
 }
-
-
-
 
 footer {
     width: 100%;
