@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <a class="logo" href="http://127.0.0.1:5500/Carmechs/index.html">CARMECHS</a>
+        <a class="logo" href="./index.html">CARMECHS</a>
         <nav class="headernav">
             <ul>
                 <li><a href="index.html">HOME</a></li>
@@ -165,11 +165,15 @@
         </div>
 
         <div class="neuwagen" id="Neuwagen">
-            <h2>Bestelle jetzt deinen Neuwagen</h2>
+            <div class="text">
+                <h2>Bestelle jetzt deinen Neuwagen</h2>
+
+                <h5>Stelle eine unverbindliche Anfrage!</h5>
+            </div>
         
             <form class="nw">
 
-                <p>Bitte fülle die entsprechenden Felder aus</p>
+                <p>Bitte fülle alle Felder aus</p>
 
                 <div class="input-container1">
                     <label for="firstname" class="form-label">Vorname:</label>
@@ -212,40 +216,48 @@
                     required>
                 </div>
 
-                <div class="brand-container">
-                    <label for="marke" class="form-label">Marke:</label>
-                    <select 
-                    class="form-select" 
-                    aria-label="select one brand"
-                    id="marke">
-                        <option value="bmw">BMW</option>
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
-                        <option value="vw">VW</option>
-                        <option value="toyota">Toyota</option>
+                <div class="section1">
+                    <div class="brand-container">
+                        <label for="marke" class="form-label">Marke:</label>
+                        <select 
+                        class="form-select" 
+                        aria-label="select one brand"
+                        id="marke">
+                            <option value="bmw">BMW</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                            <option value="vw">VW</option>
+                            <option value="toyota">Toyota</option>
                         </select>
-                </div>
-                <div class="label-select">
-                    <label for="tueren" class="form-label">Türen:</label>
-                    <select class="form-select" id="tueren">
-                        <option value="2">2</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="antrieb" id="benziner" value="benziner" checked>
-                    <label class="form-check-label" for="benziner">
-                        Benziner
-                    </label>
+
+                        <label for="tueren" class="form-label">Türen:</label>
+                        <select class="form-select" aria-label="select how many doors" id="tueren">
+                            <option value="2">2</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                    <div class="form-check">
+                        <div class="form-check1">
+                            <input class="form-check-input" type="radio" name="antrieb" id="benziner" value="benziner" checked>
+                            <label class="form-check-label" for="benziner">
+                                Benziner
+                            </label>
+                        
+                        </div>
+                        
+                        <div class="form-check2">
+                            <input class="form-check-input" type="radio" name="antrieb" id="elektro" value="elektro">
+                            <label class="form-check-label" for="elektro">
+                                Elektro
+                            </label>
+                        </div>
+                        
+                    </div>
+                    
                 </div>
                 
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="antrieb" id="elektro" value="elektro">
-                    <label class="form-check-label" for="elektro">
-                        Elektro
-                    </label>
-                </div>
                 <hr>
                 <div class="mb-3">
                     <label for="Anmerkungen" class="form-label">Anmerkungen:</label>
@@ -270,7 +282,6 @@
                 <button class="submitbutton2" type="submit">Bestellung absenden</button>
                 
             </form>
-            <h5>Stelle eine unverbindliche Anfrage!</h5>
         </div>
     </main>
     <footer>
@@ -283,7 +294,7 @@
             <li><a href="http://127.0.0.1:5500/Carmechs/index.html">Kontakt</a></li>
         </ul>
     <!--Logo hinzugefügt-->
-        <a class="logo" href="http://127.0.0.1:5500/Carmechs/index.html">CARMECHS</a>
+        <a class="logo" href="./index.html">CARMECHS</a>
     <!--div erstellt-->
         <div class="cr">CARMECHS &copy; 2024. Alle Rechte vorbehalten.</div>
 
