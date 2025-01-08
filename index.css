@@ -29,7 +29,7 @@ body {
         font-size: 2.441rem;
     }
     h4 {
-        font-size: 1.953rem;
+        font-size: 2.5vw;
     }
     h5 {
         font-size: 1.563rem;
@@ -157,12 +157,12 @@ header {
     .herotext {
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.281);
+        background-color: rgba(0, 0, 0, 0.223);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 4rem;
+        gap: 4.5rem;
         z-index: 2;
         h1 {
             color: var(--white);
@@ -301,9 +301,10 @@ main {
     .emailsection {
         height: auto;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        padding: 4rem 6rem;
+        padding: 4rem 4rem;
         background-color: var(--backroundwhite);
         .mailtext {
             width: calc(100% / 2);
@@ -338,7 +339,7 @@ main {
             
         }
         .emailform {
-            width: calc(50% - 0.5rem);
+            width: 40%;
             display: flex;
             flex-direction: column;
             gap: 3rem;
