@@ -40,6 +40,24 @@ body {
     small {
         font-size: 0.8rem;
     }
+    #backtotop {
+        position: fixed; 
+        bottom: 1.25rem; 
+        right: 1.25rem;
+        z-index: 99; /* Ebene über allen Inhalten */
+        font-size: 16px;
+        border: none;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0.5); /* Halbtransparenter Hintergrund */
+        color: rgba(255, 255, 255, 0.607);
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 1rem;
+        transition: background-color 0.3s; /* Sanfte Übergänge (nur für Hover) */
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.59);
+        }
+    }
 }
 
 header {
