@@ -40,20 +40,43 @@ body {
     small {
         font-size: 0.8rem;
     }
+    #back-to-top {
+        position: fixed; 
+        bottom: 1.25rem; 
+        right: 1.25rem;
+        z-index: 99;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0.5); /* Halbtransparenter Hintergrund */
+        color: rgba(255, 255, 255, 0.607);
+        text-decoration: none;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 1rem;
+        transition: background-color 0.3s; /* Sanfte Übergänge (nur für Hover) */
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.59);
+        }
+    }
 }
 
 header {
+    position: sticky; 
+    top: 0;
+    transition: top 0.3s;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color:#18181a ;
-    padding: 2rem 3rem;
+    padding: 2rem 2rem;
     .logo {
     color: var(--darkblue);
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 0.5rem;
-    padding-right: 2rem;
     flex-wrap: wrap;
     }
     
@@ -66,19 +89,21 @@ header {
             justify-content: center;
             flex-wrap: wrap;
             align-items: center;
-            gap: 1.5rem;
+            gap: 2rem;
+            padding: 0 2rem;
             li {
                 list-style: none;
                 a {
                     text-decoration: none;
                     color: whitesmoke;
+                    font-size: smaller;
                     &:hover {
                         text-decoration: underline;
                         text-decoration-color: var(--blue);
                         color: var(--white);
-                        text-underline-offset: 4px;
+                        text-underline-offset: .1875rem;
                         text-decoration-thickness: 2px;
-                        }
+                    }
                 }
                 }
         }
@@ -88,8 +113,7 @@ header {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 3rem;
-        padding-left: 2rem;
+        gap: 2rem;
         .signin {
             color: var(--orange);
             text-decoration: none;
@@ -107,7 +131,7 @@ header {
 }
 
 
-.herosection {
+#herosection {
     height: 60vh;
     background-image: url(./Images/heropic.jpeg);
     background-position: center;
@@ -116,6 +140,7 @@ header {
     align-items: center;
     display: flex;
     flex-direction: column;
+    scroll-margin-top: 8rem;
     .herotext {
         width: 100%;
         height: 100%;
@@ -142,7 +167,7 @@ header {
             }
         }
     }
-    .herosection h1, .herosection button {
+    #herosection h1, #herosection button {
         position: relative;
         z-index: 2;
     }
@@ -448,27 +473,42 @@ main {
 
 
 footer {
-    height: 20vh;
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     background-color: var(--blackbackround);
     color: var(--white);
     padding: .3125rem 3rem;
     flex-wrap: wrap;
+    gap: 3rem;
     ul {
         display: flex;
+        flex-wrap: wrap;
         list-style-type: none;
         justify-content: center;
         align-items: center;
         gap: 3rem;
         margin-top: 2.5rem;
     }
-    small {
+    .logo {
+        color: var(--darkblue);
+        text-decoration: none;
+        font-weight: bold;
+        letter-spacing: 0.5rem;
+        padding-right: 2rem;
+        &:hover {
+            color: var(--darkblue);
+        }
+    }
+    .cr {
         color: rgb(96, 94, 94);
         margin-bottom: 1.5rem;
+        align-self: center;
+        font-size: small;
+        justify-content: center;
+        align-items: center;
     }
 }
 
