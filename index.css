@@ -466,9 +466,10 @@ footer {
         gap: 3rem;
         margin-top: 2.5rem;
     }
-    small {
+    .cr {
         color: rgb(96, 94, 94);
         margin-bottom: 1.5rem;
+        align-self: center;
     }
 }
 
