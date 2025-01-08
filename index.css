@@ -17,7 +17,7 @@ body {
     font-size: 1rem;
     /* typescale 1.250 major third */
     h1 {
-        font-size:  3.18vw;
+        font-size:  4vw;
         color: var(--white);
     }
     h2 {
@@ -70,7 +70,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#18181a ;
+    background-color:#000000d9 ;
     padding: 2rem 2rem;
     .logo {
     color: var(--darkblue);
@@ -96,7 +96,7 @@ header {
                 a {
                     text-decoration: none;
                     color: whitesmoke;
-                    font-size: smaller;
+                    font-size: 1rem;
                     &:hover {
                         text-decoration: underline;
                         text-decoration-color: var(--blue);
@@ -117,6 +117,7 @@ header {
         .signin {
             color: var(--orange);
             text-decoration: none;
+            font-size: 1rem;
             &:hover {
                 color: var(--blue);
             }
@@ -164,6 +165,7 @@ header {
         z-index: 2;
         h1 {
             color: var(--white);
+
         }
         button {
             background-color: #da9e59b6;
@@ -222,12 +224,12 @@ main {
                     cursor: pointer;
                     ;
                     transform: scale(1.05);
-                    background-color: cornflowerblue;
+                    background-color: var(--blackbackround);
                     p {
                         color: var(--white);
                     }
                     h5 {
-                        color: var(--black);
+                        color: var(--orange);
                     }
                 }
                 h5 {
