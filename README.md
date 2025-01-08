@@ -1,2 +1,2 @@
 # Carmechs
-Website for Carmechs
+Website for CARMECHS ( a german motor vehicle seller )
